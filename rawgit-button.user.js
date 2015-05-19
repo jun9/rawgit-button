@@ -19,10 +19,10 @@ function replace(){
 
 	var url = location.href;
 	if (url.indexOf("gist.github.com") > -1) {
-		url = url.replace("gist.github.com", "rawgit.com");
+		url = url.replace("gist.github.com", "cdn.rawgit.com");
 		url = url + "/raw/";
 	} else {
-		url = url.replace("github.com", "rawgit.com");
+		url = url.replace("github.com", "cdn.rawgit.com");
 		url = url.replace("/blob/", "/");
 	}
 
